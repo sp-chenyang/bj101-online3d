@@ -30,13 +30,13 @@
 		<a href="http://threejs.org" target="_blank">three.js</a> - OBJMTLLoader test
 		</div>
 
-		<script src="./build/three.min.js"></script>
+		<script src="../build/three.min.js"></script>
 
-		<script src="./examples/js/loaders/MTLLoader.js"></script>
-		<script src="./examples/js/loaders/OBJMTLLoader.js"></script>
+		<script src="../examples/js/loaders/MTLLoader.js"></script>
+		<script src="../examples/js/loaders/OBJMTLLoader.js"></script>
 
-		<script src="./examples/js/Detector.js"></script>
-		<script src="./examples/js/libs/stats.min.js"></script>
+		<script src="../examples/js/Detector.js"></script>
+		<script src="../examples/js/libs/stats.min.js"></script>
 
 		<script>
 
@@ -77,7 +77,7 @@
 
 				var loader = new THREE.OBJMTLLoader();
 				//loader.load( './examples/obj/male02/male02.obj', './examples/obj/male02/male02_dds.mtl', function ( object ) {
-				loader.load( './obj/map3.obj', './obj/map3.mtl', function ( object ) {
+				loader.load( './obj/map.obj', './obj/map.mtl', function ( object ) {
 
 					object.position.y = 80;
 					scene.add( object );
