@@ -1,5 +1,5 @@
 # 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
-# File Created: 10.12.2013 22:11:10
+# File Created: 11.12.2013 00:07:42
 
 newmtl ms816
 	Ns 10.0000
@@ -12,8 +12,8 @@ newmtl ms816
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grod_03.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grod_03.jpg
+	map_Ka diffuse\grod_03.jpg
+	map_Kd diffuse\grod_03.jpg
 
 newmtl ms817
 	Ns 10.0000
@@ -26,8 +26,8 @@ newmtl ms817
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grod_04.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grod_04.jpg
+	map_Ka diffuse\grod_04.jpg
+	map_Kd diffuse\grod_04.jpg
 
 newmtl ms818
 	Ns 10.0000
@@ -40,8 +40,8 @@ newmtl ms818
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grod_01.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grod_01.jpg
+	map_Ka diffuse\grod_01.jpg
+	map_Kd diffuse\grod_01.jpg
 
 newmtl ms819
 	Ns 10.0000
@@ -54,8 +54,8 @@ newmtl ms819
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grod_02.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grod_02.jpg
+	map_Ka diffuse\grod_02.jpg
+	map_Kd diffuse\grod_02.jpg
 
 newmtl ms820
 	Ns 10.0000
@@ -68,8 +68,8 @@ newmtl ms820
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grodmb04.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grodmb04.jpg
+	map_Ka diffuse\grodmb04.jpg
+	map_Kd diffuse\grodmb04.jpg
 
 newmtl ms821
 	Ns 10.0000
@@ -82,8 +82,8 @@ newmtl ms821
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwhe029.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwhe029.jpg
+	map_Ka diffuse\bdwhe029.jpg
+	map_Kd diffuse\bdwhe029.jpg
 
 newmtl ms822
 	Ns 10.0000
@@ -96,8 +96,8 @@ newmtl ms822
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grodmb06.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grodmb06.jpg
+	map_Ka diffuse\grodmb06.jpg
+	map_Kd diffuse\grodmb06.jpg
 
 newmtl ms823
 	Ns 10.0000
@@ -110,8 +110,8 @@ newmtl ms823
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grodmb07.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grodmb07.jpg
+	map_Ka diffuse\grodmb07.jpg
+	map_Kd diffuse\grodmb07.jpg
 
 newmtl ms824
 	Ns 10.0000
@@ -124,8 +124,8 @@ newmtl ms824
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grod_05.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grod_05.jpg
+	map_Ka diffuse\grod_05.jpg
+	map_Kd diffuse\grod_05.jpg
 
 newmtl ms825
 	Ns 10.0000
@@ -138,8 +138,8 @@ newmtl ms825
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grodmb40.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grodmb40.jpg
+	map_Ka diffuse\grodmb40.jpg
+	map_Kd diffuse\grodmb40.jpg
 
 newmtl ms826
 	Ns 10.0000
@@ -152,8 +152,8 @@ newmtl ms826
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grodmb39.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grodmb39.jpg
+	map_Ka diffuse\grodmb39.jpg
+	map_Kd diffuse\grodmb39.jpg
 
 newmtl ms827
 	Ns 10.0000
@@ -166,8 +166,8 @@ newmtl ms827
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grodmb37.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grodmb37.jpg
+	map_Ka diffuse\grodmb37.jpg
+	map_Kd diffuse\grodmb37.jpg
 
 newmtl ms828
 	Ns 10.0000
@@ -180,8 +180,8 @@ newmtl ms828
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grodmb38.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grodmb38.jpg
+	map_Ka diffuse\grodmb38.jpg
+	map_Kd diffuse\grodmb38.jpg
 
 newmtl m14
 	Ns 10.0000
@@ -194,9 +194,9 @@ newmtl m14
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh001.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh001.png
-	map_d E:\p\bj101\src\art\scene\diffuse\bdwh001.png
+	map_Ka diffuse\bdwh001.png
+	map_Kd diffuse\bdwh001.png
+	map_d diffuse\bdwh001.png
 
 newmtl m15
 	Ns 10.0000
@@ -209,9 +209,9 @@ newmtl m15
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh001.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh001.png
-	map_d E:\p\bj101\src\art\scene\diffuse\bdwh001.png
+	map_Ka diffuse\bdwh001.png
+	map_Kd diffuse\bdwh001.png
+	map_d diffuse\bdwh001.png
 
 newmtl ms167
 	Ns 10.0000
@@ -224,9 +224,9 @@ newmtl ms167
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh005.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh005.png
-	map_d E:\p\bj101\src\art\scene\diffuse\bdwh005.png
+	map_Ka diffuse\bdwh005.png
+	map_Kd diffuse\bdwh005.png
+	map_d diffuse\bdwh005.png
 
 newmtl m272
 	Ns 10.0000
@@ -239,9 +239,9 @@ newmtl m272
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_004.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_004.png
-	map_d E:\p\bj101\src\art\scene\diffuse\bud_whe_004.png
+	map_Ka diffuse\bud_whe_004.png
+	map_Kd diffuse\bud_whe_004.png
+	map_d diffuse\bud_whe_004.png
 
 newmtl ms1173
 	Ns 10.0000
@@ -254,8 +254,8 @@ newmtl ms1173
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_068.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_068.jpg
+	map_Ka diffuse\bud_whe_068.jpg
+	map_Kd diffuse\bud_whe_068.jpg
 
 newmtl ms1174
 	Ns 10.0000
@@ -268,8 +268,8 @@ newmtl ms1174
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xjwa_3.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xjwa_3.jpg
+	map_Ka diffuse\xjwa_3.jpg
+	map_Kd diffuse\xjwa_3.jpg
 
 newmtl ms1175
 	Ns 10.0000
@@ -282,8 +282,8 @@ newmtl ms1175
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_045.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_045.jpg
+	map_Ka diffuse\bud_whe_045.jpg
+	map_Kd diffuse\bud_whe_045.jpg
 
 newmtl ms1176
 	Ns 10.0000
@@ -296,8 +296,8 @@ newmtl ms1176
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_044.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_044.jpg
+	map_Ka diffuse\bud_whe_044.jpg
+	map_Kd diffuse\bud_whe_044.jpg
 
 newmtl ms1177
 	Ns 10.0000
@@ -310,8 +310,8 @@ newmtl ms1177
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh016.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh016.jpg
+	map_Ka diffuse\bdwh016.jpg
+	map_Kd diffuse\bdwh016.jpg
 
 newmtl ms1178
 	Ns 10.0000
@@ -324,8 +324,8 @@ newmtl ms1178
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_075.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_075.jpg
+	map_Ka diffuse\bud_whe_075.jpg
+	map_Kd diffuse\bud_whe_075.jpg
 
 newmtl ms1179
 	Ns 10.0000
@@ -338,8 +338,8 @@ newmtl ms1179
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_041.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_041.jpg
+	map_Ka diffuse\bud_whe_041.jpg
+	map_Kd diffuse\bud_whe_041.jpg
 
 newmtl ms1180
 	Ns 10.0000
@@ -352,8 +352,8 @@ newmtl ms1180
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh002.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh002.jpg
+	map_Ka diffuse\bdwh002.jpg
+	map_Kd diffuse\bdwh002.jpg
 
 newmtl ms1181
 	Ns 10.0000
@@ -366,8 +366,8 @@ newmtl ms1181
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh024.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh024.jpg
+	map_Ka diffuse\bdwh024.jpg
+	map_Kd diffuse\bdwh024.jpg
 
 newmtl ms1182
 	Ns 10.0000
@@ -380,8 +380,8 @@ newmtl ms1182
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh005.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh005.jpg
+	map_Ka diffuse\bdwh005.jpg
+	map_Kd diffuse\bdwh005.jpg
 
 newmtl ms1183
 	Ns 10.0000
@@ -394,8 +394,8 @@ newmtl ms1183
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_042.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_042.jpg
+	map_Ka diffuse\bud_whe_042.jpg
+	map_Kd diffuse\bud_whe_042.jpg
 
 newmtl ms1184
 	Ns 10.0000
@@ -408,8 +408,8 @@ newmtl ms1184
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_043.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_043.jpg
+	map_Ka diffuse\bud_whe_043.jpg
+	map_Kd diffuse\bud_whe_043.jpg
 
 newmtl ms1185
 	Ns 10.0000
@@ -422,8 +422,8 @@ newmtl ms1185
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_037.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_037.jpg
+	map_Ka diffuse\bud_whe_037.jpg
+	map_Kd diffuse\bud_whe_037.jpg
 
 newmtl ms1186
 	Ns 10.0000
@@ -436,8 +436,8 @@ newmtl ms1186
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_049.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_049.jpg
+	map_Ka diffuse\bud_whe_049.jpg
+	map_Kd diffuse\bud_whe_049.jpg
 
 newmtl ms1187
 	Ns 10.0000
@@ -450,8 +450,8 @@ newmtl ms1187
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_026.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_026.jpg
+	map_Ka diffuse\bud_whe_026.jpg
+	map_Kd diffuse\bud_whe_026.jpg
 
 newmtl ms1188
 	Ns 10.0000
@@ -464,8 +464,8 @@ newmtl ms1188
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_040.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_040.jpg
+	map_Ka diffuse\bud_whe_040.jpg
+	map_Kd diffuse\bud_whe_040.jpg
 
 newmtl ms1189
 	Ns 10.0000
@@ -478,8 +478,8 @@ newmtl ms1189
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_038.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_038.jpg
+	map_Ka diffuse\bud_whe_038.jpg
+	map_Kd diffuse\bud_whe_038.jpg
 
 newmtl ms1190
 	Ns 10.0000
@@ -492,8 +492,8 @@ newmtl ms1190
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh034.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh034.jpg
+	map_Ka diffuse\bdwh034.jpg
+	map_Kd diffuse\bdwh034.jpg
 
 newmtl ms1191
 	Ns 10.0000
@@ -506,8 +506,8 @@ newmtl ms1191
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_050.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_050.jpg
+	map_Ka diffuse\bud_whe_050.jpg
+	map_Kd diffuse\bud_whe_050.jpg
 
 newmtl ms1192
 	Ns 10.0000
@@ -520,8 +520,8 @@ newmtl ms1192
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh011.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh011.jpg
+	map_Ka diffuse\bdwh011.jpg
+	map_Kd diffuse\bdwh011.jpg
 
 newmtl ms1193
 	Ns 10.0000
@@ -534,8 +534,8 @@ newmtl ms1193
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_017.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_017.jpg
+	map_Ka diffuse\bud_whe_017.jpg
+	map_Kd diffuse\bud_whe_017.jpg
 
 newmtl ms1194
 	Ns 10.0000
@@ -548,8 +548,8 @@ newmtl ms1194
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_039.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_039.jpg
+	map_Ka diffuse\bud_whe_039.jpg
+	map_Kd diffuse\bud_whe_039.jpg
 
 newmtl ms1195
 	Ns 10.0000
@@ -562,8 +562,8 @@ newmtl ms1195
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_027.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_027.jpg
+	map_Ka diffuse\bud_whe_027.jpg
+	map_Kd diffuse\bud_whe_027.jpg
 
 newmtl ms1196
 	Ns 10.0000
@@ -576,8 +576,8 @@ newmtl ms1196
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xjwa_59.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xjwa_59.jpg
+	map_Ka diffuse\xjwa_59.jpg
+	map_Kd diffuse\xjwa_59.jpg
 
 newmtl ms1197
 	Ns 10.0000
@@ -590,8 +590,8 @@ newmtl ms1197
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdw003.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdw003.jpg
+	map_Ka diffuse\bdw003.jpg
+	map_Kd diffuse\bdw003.jpg
 
 newmtl ms1198
 	Ns 10.0000
@@ -604,8 +604,8 @@ newmtl ms1198
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh004.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh004.jpg
+	map_Ka diffuse\bdwh004.jpg
+	map_Kd diffuse\bdwh004.jpg
 
 newmtl ms1199
 	Ns 10.0000
@@ -618,8 +618,8 @@ newmtl ms1199
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_035.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_035.jpg
+	map_Ka diffuse\bud_whe_035.jpg
+	map_Kd diffuse\bud_whe_035.jpg
 
 newmtl ms1200
 	Ns 10.0000
@@ -632,8 +632,8 @@ newmtl ms1200
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_036.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_036.jpg
+	map_Ka diffuse\bud_whe_036.jpg
+	map_Kd diffuse\bud_whe_036.jpg
 
 newmtl ms1201
 	Ns 10.0000
@@ -646,8 +646,8 @@ newmtl ms1201
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_051.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_051.jpg
+	map_Ka diffuse\bud_whe_051.jpg
+	map_Kd diffuse\bud_whe_051.jpg
 
 newmtl ms1202
 	Ns 10.0000
@@ -660,8 +660,8 @@ newmtl ms1202
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xj_qian.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xj_qian.jpg
+	map_Ka diffuse\xj_qian.jpg
+	map_Kd diffuse\xj_qian.jpg
 
 newmtl ms1203
 	Ns 10.0000
@@ -674,8 +674,8 @@ newmtl ms1203
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xj_shen.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xj_shen.jpg
+	map_Ka diffuse\xj_shen.jpg
+	map_Kd diffuse\xj_shen.jpg
 
 newmtl m1770
 	Ns 10.0000
@@ -688,8 +688,8 @@ newmtl m1770
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_046.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_046.jpg
+	map_Ka diffuse\bud_whe_046.jpg
+	map_Kd diffuse\bud_whe_046.jpg
 
 newmtl ms1205
 	Ns 10.0000
@@ -702,8 +702,8 @@ newmtl ms1205
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_032.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_032.jpg
+	map_Ka diffuse\bud_whe_032.jpg
+	map_Kd diffuse\bud_whe_032.jpg
 
 newmtl ms1206
 	Ns 10.0000
@@ -716,8 +716,8 @@ newmtl ms1206
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_033.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_033.jpg
+	map_Ka diffuse\bud_whe_033.jpg
+	map_Kd diffuse\bud_whe_033.jpg
 
 newmtl ms1207
 	Ns 10.0000
@@ -730,8 +730,8 @@ newmtl ms1207
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bd_wh052.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bd_wh052.jpg
+	map_Ka diffuse\bd_wh052.jpg
+	map_Kd diffuse\bd_wh052.jpg
 
 newmtl ms1208
 	Ns 10.0000
@@ -744,8 +744,8 @@ newmtl ms1208
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_053.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_053.jpg
+	map_Ka diffuse\bud_whe_053.jpg
+	map_Kd diffuse\bud_whe_053.jpg
 
 newmtl ms1209
 	Ns 10.0000
@@ -758,8 +758,8 @@ newmtl ms1209
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_009.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_009.jpg
+	map_Ka diffuse\bud_whe_009.jpg
+	map_Kd diffuse\bud_whe_009.jpg
 
 newmtl ms1210
 	Ns 10.0000
@@ -772,8 +772,8 @@ newmtl ms1210
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_031.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_031.jpg
+	map_Ka diffuse\bud_whe_031.jpg
+	map_Kd diffuse\bud_whe_031.jpg
 
 newmtl ms1211
 	Ns 10.0000
@@ -786,8 +786,8 @@ newmtl ms1211
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_030.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_030.jpg
+	map_Ka diffuse\bud_whe_030.jpg
+	map_Kd diffuse\bud_whe_030.jpg
 
 newmtl ms1212
 	Ns 10.0000
@@ -800,8 +800,8 @@ newmtl ms1212
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bd_wh048.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bd_wh048.jpg
+	map_Ka diffuse\bd_wh048.jpg
+	map_Kd diffuse\bd_wh048.jpg
 
 newmtl ms1213
 	Ns 10.0000
@@ -814,8 +814,8 @@ newmtl ms1213
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bd_wh047.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bd_wh047.jpg
+	map_Ka diffuse\bd_wh047.jpg
+	map_Kd diffuse\bd_wh047.jpg
 
 newmtl ms1214
 	Ns 10.0000
@@ -828,8 +828,8 @@ newmtl ms1214
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_056.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_056.jpg
+	map_Ka diffuse\bud_whe_056.jpg
+	map_Kd diffuse\bud_whe_056.jpg
 
 newmtl ms1215
 	Ns 10.0000
@@ -842,8 +842,8 @@ newmtl ms1215
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_057.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_057.jpg
+	map_Ka diffuse\bud_whe_057.jpg
+	map_Kd diffuse\bud_whe_057.jpg
 
 newmtl ms1216
 	Ns 10.0000
@@ -856,8 +856,8 @@ newmtl ms1216
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_054.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_054.jpg
+	map_Ka diffuse\bud_whe_054.jpg
+	map_Kd diffuse\bud_whe_054.jpg
 
 newmtl ms1217
 	Ns 10.0000
@@ -870,8 +870,8 @@ newmtl ms1217
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_055.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_055.jpg
+	map_Ka diffuse\bud_whe_055.jpg
+	map_Kd diffuse\bud_whe_055.jpg
 
 newmtl ms1218
 	Ns 10.0000
@@ -884,8 +884,8 @@ newmtl ms1218
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_058.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_058.jpg
+	map_Ka diffuse\bud_whe_058.jpg
+	map_Kd diffuse\bud_whe_058.jpg
 
 newmtl ms1219
 	Ns 10.0000
@@ -898,8 +898,8 @@ newmtl ms1219
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xj_m_11.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xj_m_11.jpg
+	map_Ka diffuse\xj_m_11.jpg
+	map_Kd diffuse\xj_m_11.jpg
 
 newmtl ms1220
 	Ns 10.0000
@@ -912,8 +912,8 @@ newmtl ms1220
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_059.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_059.jpg
+	map_Ka diffuse\bud_whe_059.jpg
+	map_Kd diffuse\bud_whe_059.jpg
 
 newmtl ms1221
 	Ns 10.0000
@@ -926,8 +926,8 @@ newmtl ms1221
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xjwa_13.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xjwa_13.jpg
+	map_Ka diffuse\xjwa_13.jpg
+	map_Kd diffuse\xjwa_13.jpg
 
 newmtl ms1222
 	Ns 10.0000
@@ -940,8 +940,8 @@ newmtl ms1222
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwh062.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwh062.jpg
+	map_Ka diffuse\bdwh062.jpg
+	map_Kd diffuse\bdwh062.jpg
 
 newmtl ms1223
 	Ns 10.0000
@@ -954,8 +954,8 @@ newmtl ms1223
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_074.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_074.jpg
+	map_Ka diffuse\bud_whe_074.jpg
+	map_Kd diffuse\bud_whe_074.jpg
 
 newmtl ms1224
 	Ns 10.0000
@@ -968,9 +968,9 @@ newmtl ms1224
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_006.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_006.png
-	map_d E:\p\bj101\src\art\scene\diffuse\bud_whe_006.png
+	map_Ka diffuse\bud_whe_006.png
+	map_Kd diffuse\bud_whe_006.png
+	map_d diffuse\bud_whe_006.png
 
 newmtl m317
 	Ns 10.0000
@@ -983,8 +983,8 @@ newmtl m317
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xp_zsp_012.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xp_zsp_012.jpg
+	map_Ka diffuse\xp_zsp_012.jpg
+	map_Kd diffuse\xp_zsp_012.jpg
 
 newmtl m343
 	Ns 10.0000
@@ -997,8 +997,8 @@ newmtl m343
 	Kd 0.5882 0.5882 0.5882
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xp_zsp_037.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xp_zsp_037.jpg
+	map_Ka diffuse\xp_zsp_037.jpg
+	map_Kd diffuse\xp_zsp_037.jpg
 
 newmtl ms364
 	Ns 10.0000
@@ -1011,8 +1011,8 @@ newmtl ms364
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xp_zsp_030.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xp_zsp_030.jpg
+	map_Ka diffuse\xp_zsp_030.jpg
+	map_Kd diffuse\xp_zsp_030.jpg
 
 newmtl m369
 	Ns 10.0000
@@ -1025,8 +1025,8 @@ newmtl m369
 	Kd 0.5882 0.5882 0.5882
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xp_zsp_044.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xp_zsp_044.jpg
+	map_Ka diffuse\xp_zsp_044.jpg
+	map_Kd diffuse\xp_zsp_044.jpg
 
 newmtl ms539
 	Ns 10.0000
@@ -1039,8 +1039,8 @@ newmtl ms539
 	Kd 0.5882 0.5882 0.5882
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xp_zsp_052.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xp_zsp_052.jpg
+	map_Ka diffuse\xp_zsp_052.jpg
+	map_Kd diffuse\xp_zsp_052.jpg
 
 newmtl m540
 	Ns 10.0000
@@ -1053,9 +1053,9 @@ newmtl m540
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xp_zsp_053.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xp_zsp_053.png
-	map_d E:\p\bj101\src\art\scene\diffuse\xp_zsp_053.png
+	map_Ka diffuse\xp_zsp_053.png
+	map_Kd diffuse\xp_zsp_053.png
+	map_d diffuse\xp_zsp_053.png
 
 newmtl m541
 	Ns 10.0000
@@ -1068,9 +1068,9 @@ newmtl m541
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xp_zsp_054.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xp_zsp_054.png
-	map_d E:\p\bj101\src\art\scene\diffuse\xp_zsp_054.png
+	map_Ka diffuse\xp_zsp_054.png
+	map_Kd diffuse\xp_zsp_054.png
+	map_d diffuse\xp_zsp_054.png
 
 newmtl ms1513
 	Ns 10.0000
@@ -1083,8 +1083,8 @@ newmtl ms1513
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\ground_wh_21.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\ground_wh_21.jpg
+	map_Ka diffuse\ground_wh_21.jpg
+	map_Kd diffuse\ground_wh_21.jpg
 
 newmtl ms1514
 	Ns 10.0000
@@ -1097,8 +1097,8 @@ newmtl ms1514
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grod_04.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grod_04.jpg
+	map_Ka diffuse\grod_04.jpg
+	map_Kd diffuse\grod_04.jpg
 
 newmtl ms1515
 	Ns 10.0000
@@ -1111,8 +1111,8 @@ newmtl ms1515
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grod_01.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grod_01.jpg
+	map_Ka diffuse\grod_01.jpg
+	map_Kd diffuse\grod_01.jpg
 
 newmtl ms1516
 	Ns 10.0000
@@ -1125,8 +1125,8 @@ newmtl ms1516
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grod_05.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grod_05.jpg
+	map_Ka diffuse\grod_05.jpg
+	map_Kd diffuse\grod_05.jpg
 
 newmtl ms1517
 	Ns 10.0000
@@ -1139,8 +1139,8 @@ newmtl ms1517
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grod_03.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grod_03.jpg
+	map_Ka diffuse\grod_03.jpg
+	map_Kd diffuse\grod_03.jpg
 
 newmtl ms1518
 	Ns 10.0000
@@ -1153,8 +1153,8 @@ newmtl ms1518
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grod_02.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grod_02.jpg
+	map_Ka diffuse\grod_02.jpg
+	map_Kd diffuse\grod_02.jpg
 
 newmtl ms1519
 	Ns 10.0000
@@ -1167,8 +1167,8 @@ newmtl ms1519
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xjwa__30.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xjwa__30.jpg
+	map_Ka diffuse\xjwa__30.jpg
+	map_Kd diffuse\xjwa__30.jpg
 
 newmtl ms1520
 	Ns 10.0000
@@ -1181,8 +1181,8 @@ newmtl ms1520
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\ground_wh_24.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\ground_wh_24.jpg
+	map_Ka diffuse\ground_wh_24.jpg
+	map_Kd diffuse\ground_wh_24.jpg
 
 newmtl ms1521
 	Ns 10.0000
@@ -1195,8 +1195,8 @@ newmtl ms1521
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\ground_wh_10.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\ground_wh_10.jpg
+	map_Ka diffuse\ground_wh_10.jpg
+	map_Kd diffuse\ground_wh_10.jpg
 
 newmtl ms1522
 	Ns 10.0000
@@ -1209,8 +1209,8 @@ newmtl ms1522
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\jmdx_cx_jz_002_001.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\jmdx_cx_jz_002_001.jpg
+	map_Ka diffuse\jmdx_cx_jz_002_001.jpg
+	map_Kd diffuse\jmdx_cx_jz_002_001.jpg
 
 newmtl ms1523
 	Ns 10.0000
@@ -1223,8 +1223,8 @@ newmtl ms1523
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdwhe029.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdwhe029.jpg
+	map_Ka diffuse\bdwhe029.jpg
+	map_Kd diffuse\bdwhe029.jpg
 
 newmtl ms1524
 	Ns 10.0000
@@ -1237,8 +1237,8 @@ newmtl ms1524
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\ground_wh_11.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\ground_wh_11.jpg
+	map_Ka diffuse\ground_wh_11.jpg
+	map_Kd diffuse\ground_wh_11.jpg
 
 newmtl ms1525
 	Ns 10.0000
@@ -1251,8 +1251,8 @@ newmtl ms1525
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\ground_wh_33.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\ground_wh_33.jpg
+	map_Ka diffuse\ground_wh_33.jpg
+	map_Kd diffuse\ground_wh_33.jpg
 
 newmtl ms1526
 	Ns 10.0000
@@ -1265,8 +1265,8 @@ newmtl ms1526
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bdw003.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bdw003.jpg
+	map_Ka diffuse\bdw003.jpg
+	map_Kd diffuse\bdw003.jpg
 
 newmtl ms1527
 	Ns 10.0000
@@ -1279,8 +1279,8 @@ newmtl ms1527
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\ground_wh_19.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\ground_wh_19.jpg
+	map_Ka diffuse\ground_wh_19.jpg
+	map_Kd diffuse\ground_wh_19.jpg
 
 newmtl ms1528
 	Ns 10.0000
@@ -1293,8 +1293,8 @@ newmtl ms1528
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\bud_whe_038.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\bud_whe_038.jpg
+	map_Ka diffuse\bud_whe_038.jpg
+	map_Kd diffuse\bud_whe_038.jpg
 
 newmtl ms1529
 	Ns 10.0000
@@ -1307,8 +1307,8 @@ newmtl ms1529
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\grodb27.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\grodb27.jpg
+	map_Ka diffuse\grodb27.jpg
+	map_Kd diffuse\grodb27.jpg
 
 newmtl ms1672
 	Ns 1.7000
@@ -1321,9 +1321,9 @@ newmtl ms1672
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 1.0000 1.0000 1.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xx_168_ly.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xx_168_ly.png
-	map_d E:\p\bj101\src\art\scene\diffuse\xx_168_ly.png
+	map_Ka diffuse\xx_168_ly.png
+	map_Kd diffuse\xx_168_ly.png
+	map_d diffuse\xx_168_ly.png
 
 newmtl ms1692
 	Ns 10.0000
@@ -1336,9 +1336,9 @@ newmtl ms1692
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 1.0000 1.0000 1.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\chesi_tree_10.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\chesi_tree_10.png
-	map_d E:\p\bj101\src\art\scene\diffuse\chesi_tree_10.png
+	map_Ka diffuse\chesi_tree_10.png
+	map_Kd diffuse\chesi_tree_10.png
+	map_d diffuse\chesi_tree_10.png
 
 newmtl ms1702
 	Ns 1.7000
@@ -1351,8 +1351,8 @@ newmtl ms1702
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\xx_155_ly.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\xx_155_ly.jpg
+	map_Ka diffuse\xx_155_ly.jpg
+	map_Kd diffuse\xx_155_ly.jpg
 
 newmtl ms1704
 	Ns 10.0000
@@ -1365,8 +1365,8 @@ newmtl ms1704
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\c379f0.jpg
-	map_Kd E:\p\bj101\src\art\scene\diffuse\c379f0.jpg
+	map_Ka diffuse\c379f0.jpg
+	map_Kd diffuse\c379f0.jpg
 
 newmtl ms1705
 	Ns 10.0000
@@ -1379,9 +1379,9 @@ newmtl ms1705
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\b3ee7b0.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\b3ee7b0.png
-	map_d E:\p\bj101\src\art\scene\diffuse\b3ee7b0.png
+	map_Ka diffuse\b3ee7b0.png
+	map_Kd diffuse\b3ee7b0.png
+	map_d diffuse\b3ee7b0.png
 
 newmtl ms1695
 	Ns 10.0000
@@ -1394,9 +1394,9 @@ newmtl ms1695
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\stnz_whe_tree_020.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\stnz_whe_tree_020.png
-	map_d E:\p\bj101\src\art\scene\diffuse\stnz_whe_tree_020.png
+	map_Ka diffuse\stnz_whe_tree_020.png
+	map_Kd diffuse\stnz_whe_tree_020.png
+	map_d diffuse\stnz_whe_tree_020.png
 
 newmtl ms1694
 	Ns 10.0000
@@ -1409,9 +1409,9 @@ newmtl ms1694
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\stnz_whe_tree_019.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\stnz_whe_tree_019.png
-	map_d E:\p\bj101\src\art\scene\diffuse\stnz_whe_tree_019.png
+	map_Ka diffuse\stnz_whe_tree_019.png
+	map_Kd diffuse\stnz_whe_tree_019.png
+	map_d diffuse\stnz_whe_tree_019.png
 
 newmtl ms1668
 	Ns 10.0000
@@ -1424,6 +1424,6 @@ newmtl ms1668
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka E:\p\bj101\src\art\scene\diffuse\jmdx_wgq_tree001.png
-	map_Kd E:\p\bj101\src\art\scene\diffuse\jmdx_wgq_tree001.png
-	map_d E:\p\bj101\src\art\scene\diffuse\jmdx_wgq_tree001.png
+	map_Ka diffuse\jmdx_wgq_tree001.png
+	map_Kd diffuse\jmdx_wgq_tree001.png
+	map_d diffuse\jmdx_wgq_tree001.png
