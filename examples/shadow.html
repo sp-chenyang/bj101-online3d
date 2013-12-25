@@ -214,20 +214,22 @@
 
 				// CUBES
 
-				var mesh = new THREE.Mesh( new THREE.CubeGeometry( 1500, 220, 150 ), planeMaterial );
+				var mesh = new THREE.Mesh( new THREE.CubeGeometry( 500, 500, 500 ), planeMaterial );
 
-				mesh.position.y = FLOOR - 50;
+				mesh.position.y = FLOOR+50;
 				mesh.position.z = 20;
+				mesh.position.x = 300;
 
 				mesh.castShadow = true;
 				mesh.receiveShadow = true;
 
 				scene.add( mesh );
 
-				var mesh = new THREE.Mesh( new THREE.CubeGeometry( 1600, 170, 250 ), planeMaterial );
+				var mesh = new THREE.Mesh( new THREE.CubeGeometry( 200, 200, 200 ), planeMaterial );
 
-				mesh.position.y = FLOOR - 50;
-				mesh.position.z = 20;
+				mesh.position.y = FLOOR+200;
+				mesh.position.z = 300;
+				mesh.position.x = -300;
 
 				mesh.castShadow = true;
 				mesh.receiveShadow = true;
