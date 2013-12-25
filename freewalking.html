@@ -87,6 +87,8 @@
 			var controls,time = Date.now();
 
 			var objects = [];
+            
+            var FLOOR = 8;
 
 			var ray;
 
@@ -221,57 +223,74 @@
 				scene.add( controls.getObject() );
 
         
-        //////////////////////////////////////////////////////////
-				// model
+                //////////////////////////////////////////////////////////
+                // model
 
-        var manager = new THREE.LoadingManager();
-        manager.onProgress = function ( item, loaded, total ) {
+                var manager = new THREE.LoadingManager();
+                manager.onProgress = function ( item, loaded, total ) {
 
-          console.log( item, loaded, total );
+                  console.log( item, loaded, total );
 
-        };
+                };
         
-				var loader = new THREE.OBJMTLLoader(manager);
-				loader.load( './obj/map2.obj', './obj/map2.mtl', function ( object ) {
+                var loader = new THREE.OBJMTLLoader(manager);
+                loader.load( './obj/map2.obj', './obj/map2.mtl', function ( object ) {
 
-					object.position.y = 8;
+                    object.position.y = 8;
          
-          // add alpha channel to trees.
+                    // add alpha channel to trees.
 
-          
-				object.traverse( function ( object ) {
-					if ( object instanceof THREE.Mesh ) {
-					  if ( object.material.name ) {
+              
+                    object.traverse( function ( object ) {
+                        if ( object instanceof THREE.Mesh ) {
+                          if ( object.material.name ) {
 
-						//if(mesh.name.indexOf("plant") === 0)
-						//{
-						  object.material.alphaTest = 0.5;
-						  object.material.side = THREE.DoubleSide;
-						//}
-					  }
-					  
-					  if (object.name == "gnd25_1")
-					  {
-						object.castShadow = false;
-						object.receiveShadow = true;
-						//if(object.name.indexOf("gnd") === 0)
-						//{
-						//  object.castShadow = false;
-						//}
-					  }
-					  if (object.name == "plant157_1")
-					  {
-						object.castShadow = true;
-						object.receiveShadow = false;
-					  }
-					}
-				} );
+                            //if(mesh.name.indexOf("plant") === 0)
+                            //{
+                              object.material.alphaTest = 0.5;
+                              object.material.side = THREE.DoubleSide;
+                            //}
+                          }
+                          
+                          if (object.name == "gnd25_1")
+                          {
+                            object.castShadow = false;
+                            object.receiveShadow = true;
+                            //if(object.name.indexOf("gnd") === 0)
+                            //{
+                            //  object.castShadow = false;
+                            //}
+                          }
+                          if (object.name == "plant157_1")
+                          {
+                            object.castShadow = true;
+                            object.receiveShadow = false;
+                          }
+                        }
+                    } );
           
           
-					scene.add( object );
+                    scene.add( object );
 
-				} );
-        ///////////////////////////////////////////////////////
+                } );
+                
+                // CUBES
+
+                var planeMaterial = new THREE.MeshPhongMaterial( { color: 0xffdd99 } );
+                planeMaterial.ambient = planeMaterial.color;
+                
+                var mesh = new THREE.Mesh( new THREE.CubeGeometry( 10, 10, 10 ), planeMaterial );
+
+                mesh.position.y = FLOOR+10;
+                mesh.position.z = 10;
+                mesh.position.x = 10;
+
+                mesh.castShadow = true;
+                mesh.receiveShadow = true;
+
+                scene.add( mesh );
+                
+                ///////////////////////////////////////////////////////
         
         
         
