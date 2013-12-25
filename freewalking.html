@@ -281,7 +281,7 @@
                 
                 var mesh = new THREE.Mesh( new THREE.CubeGeometry( 10, 10, 10 ), planeMaterial );
 
-                mesh.position.y = FLOOR+10;
+                mesh.position.y = FLOOR+8;
                 mesh.position.z = 10;
                 mesh.position.x = 10;
 
@@ -289,6 +289,19 @@
                 mesh.receiveShadow = true;
 
                 scene.add( mesh );
+                
+                var mesh = new THREE.Mesh( new THREE.CubeGeometry( 20, 2, 20 ), planeMaterial );
+
+                mesh.position.y = FLOOR+0;
+                mesh.position.z = 10;
+                mesh.position.x = 10;
+
+                mesh.castShadow = true;
+                mesh.receiveShadow = true;
+
+                scene.add( mesh );
+                
+                
                 
                 ///////////////////////////////////////////////////////
         
