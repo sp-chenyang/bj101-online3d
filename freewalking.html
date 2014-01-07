@@ -1,64 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>BJ101 Online3D Testing</title>
-		<style>
-			html, body {
-				width: 100%;
-				height: 100%;
-			}
-
-			body {
-				background-color: #ffffff;
-				margin: 0;
-				overflow: hidden;
-				font-family: arial;
-			}
-
-			#blocker {
-
-				position: absolute;
-
-				width: 100%;
-				height: 100%;
-
-				background-color: rgba(0,0,0,0.5);
-
-			}
-
-			#instructions {
-
-				width: 100%;
-				height: 100%;
-
-				display: -webkit-box;
-				display: -moz-box;
-				display: box;
-
-				-webkit-box-orient: horizontal;
-				-moz-box-orient: horizontal;
-				box-orient: horizontal;
-
-				-webkit-box-pack: center;
-				-moz-box-pack: center;
-				box-pack: center;
-
-				-webkit-box-align: center;
-				-moz-box-align: center;
-				box-align: center;
-
-				color: #ffffff;
-				text-align: center;
-
-				cursor: pointer;
-
-			}
-
-		</style>
-	</head>
 	<body>
-  
 		<script src="../build/three.min.js"></script>
     
     <!-- obj/mtl loader -->
@@ -67,28 +9,38 @@
 
 		<script src="../examples/js/Detector.js"></script>
 		<script src="../examples/js/libs/stats.min.js"></script>
-    
+
 		<script src="../examples/js/controls/PointerLockControls.js"></script>
 
 		<div id="blocker">
-
 			<div id="instructions">
 				<span style="font-size:40px">Click to play</span>
 				<br />
 				(W, A, S, D = Move, SPACE = Jump, MOUSE = Look around)
 			</div>
-
 		</div>
 
 		<script>
 
-			var camera, scene, renderer;
+			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+
+			var SHADOW_MAP_WIDTH = 512, SHADOW_MAP_HEIGHT = 256;
+
+			var MARGIN = 100;
+
+			var SCREEN_WIDTH = window.innerWidth;
+			var SCREEN_HEIGHT = window.innerHeight - 2 * MARGIN;
+			var FLOOR = 8;
+
+			var camera, controls, scene, renderer;
 			var geometry, material, mesh;
-			var controls,time = Date.now();
+			var time = Date.now();
+
+			var NEAR = 1, FAR = 3000;
 
 			var objects = [];
             
-            var FLOOR = 8;
+            
 
 			var ray;
 
@@ -187,36 +139,41 @@
 
 			function init() {
 
-				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1000 );
+				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, NEAR, FAR );
+                camera.position.set( 0, 0, 500 );
 
 				scene = new THREE.Scene();
 				//scene.fog = new THREE.Fog( 0xffffff, 0, 750 );
         
-        //var ambient = new THREE.AmbientLight( 0x101030 );
-				//scene.add( ambient );
+                var ambient = new THREE.AmbientLight( 0x101030 );
+				scene.add( ambient );
 
-				var light = new THREE.DirectionalLight( 0xffffff, 2.0 );
-				light.position.set( -100, 100, 100 );
+				light = new THREE.SpotLight( 0xffffff, 1, 0, Math.PI, 1 );
+				light.position.set( 0, 1500, 1000 );
+				light.target.position.set( 0, 0, 0 );
 
-        light.castShadow = true;
-        light.shadowDarkness = 0.5;
-        light.shadowCameraVisible = true;
-        
-				light.shadowCameraNear = 7;
-				light.shadowCameraFar = 300;
-        
-        light.shadowCameraLeft = -50;
-        light.shadowCameraRight = 50;
-        light.shadowCameraTop = 50;
-        light.shadowCameraBottom = -50;
-        
-				light.shadowMapWidth = 10240;
-				light.shadowMapHeight = 10240;
+				light.castShadow = true;
+
+				light.shadowCameraNear = 700;
+				light.shadowCameraFar = camera.far;
+				light.shadowCameraFov = 50;
+
+				//light.shadowCameraVisible = true;
+
+				light.shadowBias = 0.0001;
+				light.shadowDarkness = 0.5;
+
+				light.shadowMapWidth = SHADOW_MAP_WIDTH;
+				light.shadowMapHeight = SHADOW_MAP_HEIGHT;
         
 				scene.add( light );
 
 				var light = new THREE.DirectionalLight( 0xffffff, 0.75 );
 				light.position.set( -1, - 0.5, -1 );
+                
+				light.shadowMapWidth = SHADOW_MAP_WIDTH;
+				light.shadowMapHeight = SHADOW_MAP_HEIGHT;
+                
 				scene.add( light );
 
 				controls = new THREE.PointerLockControls( camera );
@@ -233,16 +190,23 @@
 
                 };
         
-                /*var loader = new THREE.OBJMTLLoader(manager);
+                var loader = new THREE.OBJMTLLoader(manager);
                 loader.load( './obj/map2.obj', './obj/map2.mtl', function ( object ) {
 
-                    object.position.y = 8;
+                    object.position.y = 80;
          
                     // add alpha channel to trees.
 
               
                     object.traverse( function ( object ) {
                         if ( object instanceof THREE.Mesh ) {
+                          object.scale.x = 10;
+                          object.scale.y = 10;
+                          object.scale.z = 10;
+                          
+                          object.castShadow = true;
+                          //object.receiveShadow = true;
+                          
                           if ( object.material.name ) {
 
                             //if(mesh.name.indexOf("plant") === 0)
@@ -254,8 +218,8 @@
                           
                           if (object.name == "gnd25_1")
                           {
-                            object.castShadow = false;
-                            object.receiveShadow = true;
+                            //object.castShadow = false;
+                            //object.receiveShadow = true;
                             //if(object.name.indexOf("gnd") === 0)
                             //{
                             //  object.castShadow = false;
@@ -263,8 +227,8 @@
                           }
                           if (object.name == "plant157_1")
                           {
-                            object.castShadow = true;
-                            object.receiveShadow = false;
+                            //object.castShadow = true;
+                            //object.receiveShadow = false;
                           }
                         }
                     } );
@@ -272,25 +236,29 @@
           
                     scene.add( object );
 
-                } );*/
+                } );
                 
                 // CUBES
 
-                var planeMaterial = new THREE.MeshPhongMaterial( { color: 0xffdd99 } );
+                //var planeMaterial = new THREE.MeshPhongMaterial( { color: 0xffdd99 } );
+                var planeMaterial = new THREE.MeshPhongMaterial( { color: 0xeeeeee } );
                 planeMaterial.ambient = planeMaterial.color;
                 
                 var mesh = new THREE.Mesh( new THREE.CubeGeometry( 10, 10, 10 ), planeMaterial );
 
-                mesh.position.y = FLOOR+8;
-                mesh.position.z = 10;
-                mesh.position.x = 10;
+                mesh.position.y = FLOOR+100;
+                mesh.position.z = 200;
+                mesh.position.x = 200;
+                mesh.scale.x = 10;
+                mesh.scale.y = 10;
+                mesh.scale.z = 10;
 
                 mesh.castShadow = true;
                 mesh.receiveShadow = true;
 
                 scene.add( mesh );
                 
-                var mesh = new THREE.Mesh( new THREE.CubeGeometry( 20, 2, 20 ), planeMaterial );
+                var mesh = new THREE.Mesh( new THREE.CubeGeometry( 20000, 0.2, 20000 ), planeMaterial );
 
                 mesh.position.y = FLOOR+0;
                 mesh.position.z = 10;
