@@ -1,38 +1,66 @@
 <html>
-	<head>
-		<title>My first Three.js app</title>
-		<style>
-			body { margin: 0; }
-			canvas { width: 100%; height: 100% }
-		</style>
-	</head>
-	<body>
-		<script src="../../libs/mrdoob-three.js-d49bb0e/build/three.min.js"></script>
-		<script>
-			var scene = new THREE.Scene();
-			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+  <head>
+    <title>My first Three.js app</title>
+		<meta charset="utf-8">
+    <style>
+      body { margin: 0; }
+      canvas { width: 100%; height: 100% }
+    </style>
+  </head>
+  <body>
+    <script src="../../libs/mrdoob-three.js-d49bb0e/build/three.min.js"></script>
+    <script>
+      // create a scene
+      var scene = new THREE.Scene();
+      
+      // create a perspective camera
+      //  - fov : 75
+      //  - aspect (长宽比) : window width / window height
+      //  - near : 0.1
+      //  - far : 1000
+      var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
-			var renderer = new THREE.WebGLRenderer();
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			document.body.appendChild( renderer.domElement );
+      // create a renderer
+      var renderer = new THREE.WebGLRenderer();
+      // resize the output canvas size.
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      // put canvas tag to html body, renderer draws its output on this canvas.
+      document.body.appendChild( renderer.domElement );
 
-			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-			var cube = new THREE.Mesh( geometry, material );
-			scene.add( cube );
+      // create a box, 1x2x3
+      var geometry = new THREE.BoxGeometry( 1, 2, 3 );
+      // create basic material
+      // param is a object, has some properties
+      var material = new THREE.MeshBasicMaterial( {
+        color: 0x00ff00, // box color
+        wireframe: true // render is as wireframe
+      } );
+      // create a mesh from geometry and material.
+      var cube = new THREE.Mesh( geometry, material );
+      // put mesh to scene.
+      scene.add( cube );
 
-			camera.position.z = 5;
+      // set camera position
+      camera.position.z = 5;
+      //camera.position.x = 5;
 
-			var render = function () {
-				requestAnimationFrame( render );
+      
+      var render = function () {
+        // create a render loop, default 60 frames per second.
+        requestAnimationFrame( render );
 
-				cube.rotation.x += 0.1;
-				cube.rotation.y += 0.1;
+        // rotate this box a little, per frame
+        // rotation is a property of Object3D(http://threejs.org/docs/#Reference/Core/Object3D), Base class for scene graph objects
+        // not a property of THREE.Mesh
+        //cube.rotation.x += 0.1;
+        cube.rotation.y += 0.1;
 
-				renderer.render(scene, camera);
-			};
+        // render this scene using the camera we create above
+        renderer.render(scene, camera);
+      };
 
-			render();
-		</script>
-	</body>
+      // turn on the light
+      render();
+    </script>
+  </body>
 </html>
