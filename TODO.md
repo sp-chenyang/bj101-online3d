@@ -1,6 +1,8 @@
 TODO
 ==============
 
+- getting started
+  - hello world
 - base
   - mesh
   - shadow
