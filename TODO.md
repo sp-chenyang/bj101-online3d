@@ -2,9 +2,11 @@ TODO
 ==============
 
 - getting started
-  - hello world
+  - ~~hello world
+  - ~~transformation
 - base
-  - mesh
+  - ~~mesh
+  - loader
   - shadow
   - obj loader
 - function
