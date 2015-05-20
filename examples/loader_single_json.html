@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>three.js webgl - blender</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+      body {
+        font-family: Monospace;
+        background-color: #000000;
+        margin: 0px;
+        overflow: hidden;
+      }
+
+      #info {
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        text-align: center;
+        z-index: 100;
+        display:block;
+
+      }
+
+      a { color: red }
+
+      #stats { position: absolute; top:0; left: 0 }
+      #stats #fps { background: transparent !important }
+      #stats #fps #fpsText { color: #aaa !important }
+      #stats #fps #fpsGraph { display: none }
+    </style>
+  </head>
+
+  <body>
+    <div id="info">
+      <a href="http://threejs.org" target="_blank">three.js</a> -
+      monster by <a href="http://www.3drt.com/downloads.htm" target="_blank">3drt</a>
+    </div>
+
+    <script src="../../libs/mrdoob-three.js-d49bb0e/build/three.js"></script>
+
+    <script src="../../libs/mrdoob-three.js-d49bb0e/examples/js/loaders/ColladaLoader.js"></script>
+
+    <script src="../../libs/mrdoob-three.js-d49bb0e/examples/js/Detector.js"></script>
+    <script src="../../libs/mrdoob-three.js-d49bb0e/examples/js/libs/stats.min.js"></script>
+
+    <script>
+
+      // Check webgl env.
+      if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+
+      var container, stats;
+
+      var camera, scene, renderer, objects;
+      var particleLight, pointLight;
+
+      var clock = new THREE.Clock();
+      var morphs = [];
+
+      
+      
+      
+        init();
+        animate();
+
+      function init() {
+
+        container = document.createElement( 'div' );
+        document.body.appendChild( container );
+
+        camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 2000 );
+        camera.position.set( 2, 4, 5 );
+
+        scene = new THREE.Scene();
+        //scene.fog = new THREE.FogExp2( 0x000000, 0.035 );
+
+        // Add Blender exported Collada model
+
+        var loader = new THREE.JSONLoader();
+        var model_json = '../../libs/mrdoob-three.js-d49bb0e/examples/models/animated/monster/monster.js';
+        var model_json = './models/school_item.json';
+        
+        loader.load( model_json, function ( geometry, materials ) {
+
+          // adjust color a bit
+
+          var material = materials[ 0 ];
+          //material.morphTargets = true;
+          //material.color.setHex( 0xffaaaa );
+
+          var faceMaterial = new THREE.MeshFaceMaterial( materials );
+
+          for ( var i = 0; i < 1; i ++ ) {
+
+            // random placement in a grid
+
+            var x = ( ( i % 27 )  - 13.5 ) * 2 + THREE.Math.randFloatSpread( 1 );
+            var z = ( Math.floor( i / 27 ) - 13.5 ) * 2 + THREE.Math.randFloatSpread( 1 );
+
+            // leave space for big monster
+
+            if ( Math.abs( x ) < 2 && Math.abs( z ) < 2 ) continue;
+
+            //morph = new THREE.MorphAnimMesh( geometry, faceMaterial );
+            morph = new THREE.Mesh( geometry, faceMaterial );
+
+            // one second duration
+
+            morph.duration = 1000;
+
+            // random animation offset
+
+            morph.time = 1000 * Math.random();
+
+            //var s = THREE.Math.randFloat( 0.00075, 0.001 );
+            //morph.scale.set( s, s, s );
+
+            morph.position.set( 0, 0, 0 );
+            morph.rotation.y = THREE.Math.randFloat( -0.25, 0.25 );
+
+            morph.matrixAutoUpdate = false;
+            morph.updateMatrix();
+
+            scene.add( morph );
+
+            morphs.push( morph );
+            
+            
+var bbox = new THREE.BoundingBoxHelper( morph, 0xff0000 );
+bbox.update();
+scene.add( bbox );
+
+          }
+
+        } );
+
+        // Lights
+
+        //scene.add( new THREE.AmbientLight( 0xcccccc ) );
+        scene.add( new THREE.AmbientLight( 0xffffff ) );
+
+        //pointLight = new THREE.PointLight( 0xff4400, 5, 30 );
+        pointLight = new THREE.PointLight( 0xffffff, 5, 300 );
+        pointLight.position.set( 5, 0, 0 );
+        scene.add( pointLight );
+
+        // Renderer
+
+        renderer = new THREE.WebGLRenderer();
+        renderer.setPixelRatio( window.devicePixelRatio );
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        container.appendChild( renderer.domElement );
+
+        // Stats
+
+        stats = new Stats();
+        container.appendChild( stats.domElement );
+
+        // Events
+
+        window.addEventListener( 'resize', onWindowResize, false );
+
+      }
+
+      //
+
+      function onWindowResize( event ) {
+
+        renderer.setSize( window.innerWidth, window.innerHeight );
+
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+      }
+
+      //
+
+      function animate() {
+
+        requestAnimationFrame( animate );
+
+        var delta = clock.getDelta();
+
+        // animate Collada model
+
+        THREE.AnimationHandler.update( delta );
+
+        /*if ( morphs.length ) {
+
+          for ( var i = 0; i < morphs.length; i ++ )
+            morphs[ i ].updateAnimation( 1000 * delta );
+
+        }*/
+
+        render();
+        stats.update();
+
+      }
+
+      function render() {
+
+        var timer = Date.now() * 0.0005;
+
+        camera.position.x = Math.cos( timer ) * 10;
+        camera.position.y = 20;
+        camera.position.z = Math.sin( timer ) * 10;
+
+        camera.lookAt( scene.position );
+
+        renderer.render( scene, camera );
+
+      }
+
+    </script>
+  </body>
+</html>
