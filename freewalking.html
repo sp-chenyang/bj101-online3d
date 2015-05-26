@@ -192,6 +192,7 @@
       function init() {
 
         camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1000 );
+        camera.position.set( -15, 30, 15 );
 
         scene = new THREE.Scene();
         //scene.fog = new THREE.Fog( 0xffffff, 0, 750 );
@@ -200,13 +201,13 @@
         //scene.add( ambient );
 
         var light = new THREE.DirectionalLight( 0xffffff, 2.0 );
-        light.position.set( -100, 100, 100 );
-/*debug shadow
+        light.position.set( -500, 500, 500 );
+
         light.castShadow = true;
         light.shadowDarkness = 0.5;
         light.shadowCameraVisible = true;
         
-        light.shadowCameraNear = 7;
+        /*light.shadowCameraNear = 7;
         light.shadowCameraFar = 300;
         
         light.shadowCameraLeft = -50;
@@ -214,14 +215,14 @@
         light.shadowCameraTop = 50;
         light.shadowCameraBottom = -50;
         
-        light.shadowMapWidth = 10240;
-        light.shadowMapHeight = 10240;
-*/        
+        light.shadowMapWidth = 512;
+        light.shadowMapHeight = 512;*/
+
         scene.add( light );
 
-        var light = new THREE.DirectionalLight( 0xffffff, 0.75 );
+        /*var light = new THREE.DirectionalLight( 0xffffff, 0.75 );
         light.position.set( -1, - 0.5, -1 );
-        scene.add( light );
+        scene.add( light );*/
 
         controls = new THREE.PointerLockControls( camera );
         scene.add( controls.getObject() );
@@ -311,33 +312,25 @@
         loader.load( './obj/map.obj', './obj/map.mtl', function ( object ) {
 
           object.position.y = 8;
+          object.scale.set(20, 20, 20);
           
-          object.traverse( function ( object ) {
-            if ( object instanceof THREE.Mesh ) {
+          object.traverse( function ( child ) {
+            if ( child instanceof THREE.Mesh ) {
+            
+              // enable casting shadows
+              child.castShadow = true;
+              child.receiveShadow = true;
+              objects.push( child );
             
               // add alpha channel to trees.
-              if ( object.material.name ) {
+              if ( child.material.name ) {
                 //if(mesh.name.indexOf("plant") === 0)
                 //{
-                  object.material.alphaTest = 0.5;
-                  object.material.side = THREE.DoubleSide;
+                  child.material.alphaTest = 0.5;
+                  child.material.side = THREE.DoubleSide;
                 //}
               }
               
-              if (object.name == "gnd25_1")
-              {
-                object.castShadow = false;
-                object.receiveShadow = true;
-                //if(object.name.indexOf("gnd") === 0)
-                //{
-                //  object.castShadow = false;
-                //}
-              }
-              if (object.name == "plant157_1")
-              {
-                object.castShadow = true;
-                object.receiveShadow = false;
-              }
             }
           } );
           
@@ -348,6 +341,13 @@
         ///////////////////////////////////////////////////////
         
         
+        // unit panel
+        var ground = new THREE.Mesh( new THREE.PlaneGeometry(20, 20, 1, 1), new THREE.MeshLambertMaterial({color:0x999999}) );
+        ground.receiveShadow = true;
+        ground.position.set(0, 20, 0);
+        ground.rotation.x = -Math.PI / 2;
+        scene.add(ground);
+        //
         
         raycaster = new THREE.Raycaster( new THREE.Vector3(), new THREE.Vector3( 0, - 1, 0 ), 0, 10 );
 
@@ -414,11 +414,12 @@
         renderer.setClearColor( 0xffffff );
         renderer.setPixelRatio( window.devicePixelRatio );
         renderer.setSize( window.innerWidth, window.innerHeight );
-        /* debug shadow
+        
         renderer.shadowMapEnabled = true;
-        renderer.shadowMapDebug = true;
-        renderer.shadowMapType = THREE.PCFShadowMap;
-        */
+        renderer.shadowMapSoft = true;
+        //renderer.shadowMapDebug = true;
+        //renderer.shadowMapType = THREE.PCFShadowMap;
+        
         document.body.appendChild( renderer.domElement );
 
         //
@@ -445,7 +446,7 @@
           raycaster.ray.origin.y -= 10;
 
           // calculate objects intersecting the picking ray
-          var intersections = raycaster.intersectObjects( objects );
+          var intersections = raycaster.intersectObjects( objects, true );
 
           var isOnObject = intersections.length > 0;
 
@@ -457,11 +458,11 @@
 
           velocity.y -= 9.8 * 100.0 * delta; // 100.0 = mass
 
-          if ( moveForward ) velocity.z -= 400.0 * delta;
-          if ( moveBackward ) velocity.z += 400.0 * delta;
+          if ( moveForward ) velocity.z -= 4000.0 * delta;
+          if ( moveBackward ) velocity.z += 4000.0 * delta;
 
-          if ( moveLeft ) velocity.x -= 400.0 * delta;
-          if ( moveRight ) velocity.x += 400.0 * delta;
+          if ( moveLeft ) velocity.x -= 4000.0 * delta;
+          if ( moveRight ) velocity.x += 4000.0 * delta;
 
           if ( isOnObject === true ) {
             velocity.y = Math.max( 0, velocity.y );
