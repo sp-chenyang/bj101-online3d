@@ -8,7 +8,8 @@ TODO
   - ~~mesh
   - ~~loader
   - shadow
-  - obj loader
+  - ~~obj loader
+  - control (MS/KB)
 - function
   - scene loader
   - control logic
