@@ -1,0 +1,156 @@
+# Blender MTL File: 'None'
+# Material Count: 14
+
+newmtl ms539
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.470560 0.470560 0.470560
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\xp_zsp_052.jpg
+map_Ka diffuse\\xp_zsp_052.jpg
+
+newmtl ms816
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grod_03.jpg
+map_Ka diffuse\\grod_03.jpg
+
+newmtl ms817
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grod_04.jpg
+map_Ka diffuse\\grod_04.jpg
+
+newmtl ms818
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grod_01.jpg
+map_Ka diffuse\\grod_01.jpg
+
+newmtl ms819
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grod_02.jpg
+map_Ka diffuse\\grod_02.jpg
+
+newmtl ms820
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grodmb04.jpg
+map_Ka diffuse\\grodmb04.jpg
+
+newmtl ms821
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\bdwhe029.jpg
+map_Ka diffuse\\bdwhe029.jpg
+
+newmtl ms822
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grodmb06.jpg
+map_Ka diffuse\\grodmb06.jpg
+
+newmtl ms823
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grodmb07.jpg
+map_Ka diffuse\\grodmb07.jpg
+
+newmtl ms824
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grod_05.jpg
+map_Ka diffuse\\grod_05.jpg
+
+newmtl ms825
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grodmb40.jpg
+map_Ka diffuse\\grodmb40.jpg
+
+newmtl ms826
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grodmb39.jpg
+map_Ka diffuse\\grodmb39.jpg
+
+newmtl ms827
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grodmb37.jpg
+map_Ka diffuse\\grodmb37.jpg
+
+newmtl ms828
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd diffuse\grodmb38.jpg
+map_Ka diffuse\\grodmb38.jpg
