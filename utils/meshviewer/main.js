@@ -2,6 +2,14 @@
  * Original code copy from http://stemkoski.github.io/Three.js/Model.html
  ******************************************************************************/
 
+// Config
+
+// The position of mesh after loading.
+var G_MonkeyInitPosition = {};
+G_MonkeyInitPosition.x = 0;
+G_MonkeyInitPosition.y = 50;
+G_MonkeyInitPosition.z = 0;
+
 // MAIN
 
 // standard global variables
@@ -93,6 +101,108 @@ function init()
   var ambientLight = new THREE.AmbientLight(0x111111);
   scene.add(ambientLight);
   
+  //
+  // GUI
+  //
+  
+  gui = new dat.GUI();
+  
+  parameters = 
+  {
+    x: 0, y: G_MonkeyInitPosition.y, z: 0,
+    color: "#ff0000", // color (change "#" to "0x")
+    opacity: 1, 
+    visible: true,
+    material: "Phong",
+    reset: function() { resetMonkey() }
+  };
+
+  var folder1 = gui.addFolder('Position');
+  var monkeyX = folder1.add( parameters, 'x' ).min(-200).max(200).step(1).listen();
+  var monkeyY = folder1.add( parameters, 'y' ).min(0).max(100).step(1).listen();
+  var monkeyZ = folder1.add( parameters, 'z' ).min(-200).max(200).step(1).listen();
+  folder1.open();
+  
+  monkeyX.onChange(function(value) {
+    monkey.position.x = value;
+  });
+  monkeyY.onChange(function(value) {
+    monkey.position.y = value;
+  });
+  monkeyZ.onChange(function(value) {
+    monkey.position.z = value;
+  });
+  
+  var monkeyColor = gui.addColor( parameters, 'color' ).name('Color').listen();
+  // onFinishChange
+  monkeyColor.onChange(function(value) {
+    // Check single or multiple material.
+    //monkey.material.color.setHex( value.replace("#", "0x") );
+    monkey.material.materials[0].color.setHex( value.replace("#", "0x") );
+  });
+  
+  var monkeyOpacity = gui.add( parameters, 'opacity' ).min(0).max(1).step(0.01).name('Opacity').listen();
+  monkeyOpacity.onChange(function(value) {
+    // Check single or multiple material.
+    //monkey.material.opacity = value;
+    monkey.material.materials[0].opacity = value;
+  });
+  
+  var monkeyMaterial = gui.add( parameters, 'material', [ "Basic", "Lambert", "Phong", "Wireframe" ] ).name('Material Type').listen();
+  monkeyMaterial.onChange(function(value) {
+    updateMonkey();
+  });
+  
+  var monkeyVisible = gui.add( parameters, 'visible' ).name('Visible?').listen();
+  monkeyVisible.onChange(function(value) {
+    monkey.visible = value;
+  });
+  
+  gui.add( parameters, 'reset' ).name("Reset monkey Parameters");
+  
+  gui.open();
+  
+}
+
+function updateMonkey()
+{
+  var value = parameters.material;
+  var newMaterial;
+  if (value == "Basic")
+    newMaterial = new THREE.MeshBasicMaterial( { color: 0x000000 } );
+  else if (value == "Lambert")
+    newMaterial = new THREE.MeshLambertMaterial( { color: 0x000000 } );
+  else if (value == "Phong")
+    newMaterial = new THREE.MeshPhongMaterial( { color: 0x000000 } );
+  else // (value == "Wireframe")
+    newMaterial = new THREE.MeshBasicMaterial( { wireframe: true } );
+  
+  newMaterial.color.setHex( parameters.color.replace("#", "0x") );
+  newMaterial.opacity = parameters.opacity;  
+  newMaterial.transparent = true;
+  
+  monkey.material = new THREE.MeshFaceMaterial();
+  monkey.material.materials = [];
+  monkey.material.materials.push ( newMaterial ) ;
+  
+  monkey.position.x = parameters.x;
+  monkey.position.y = parameters.y;
+  monkey.position.z = parameters.z;
+
+  monkey.visible = parameters.visible;
+  
+}
+
+function resetMonkey()
+{
+  parameters.x = 0;
+  parameters.y = G_MonkeyInitPosition.y;
+  parameters.z = 0;
+  parameters.color = "#ff0000";
+  parameters.opacity = 1;
+  parameters.visible = true;
+  parameters.material = "Phong";
+  updateMonkey();
 }
 
 function addModelToScene( geometry, materials ) 
@@ -100,7 +210,7 @@ function addModelToScene( geometry, materials )
   var material = new THREE.MeshFaceMaterial( materials );
   monkey = new THREE.Mesh( geometry, material );
   monkey.scale.set(10,10,10);
-  monkey.position.y = 50;
+  monkey.position.y = G_MonkeyInitPosition.y;
   scene.add( monkey );
 }
 
