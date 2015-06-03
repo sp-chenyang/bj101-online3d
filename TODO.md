@@ -7,9 +7,10 @@ TODO
 - base
   - ~~mesh
   - ~~loader
-  - shadow
+  - ~~shadow
   - ~~obj loader
   - control (MS/KB)
+  - skeletal animation
 - function
   - scene loader
   - control logic
