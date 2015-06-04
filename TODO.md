@@ -1,18 +1,23 @@
 TODO
 ==============
 
-- getting started
-  - ~~hello world
-  - ~~transformation
-- base
+- ThreeJS: Getting started
+  - ~~Hello world
+  - ~~Transformation
+- ThreeJS: Base
   - ~~mesh
   - ~~loader
   - ~~shadow
-  - ~~obj loader
+  - ~~obj file loader
   - control (MS/KB)
   - skeletal animation
-- function
-  - scene loader
-  - control logic
-- utils
-  - mesh viewer
+- ThreeJS: Function
+  - Scene loader
+  - Control logic
+- Bleder: Getting started
+  - Blender/Python API quick start
+- Utils
+  - Mesh Viewer: load static json.
+  - Blender internal mesh viewer
+    - A button to call chrome WebGL renderer
+    - Blender embeded WebGL renderer.
